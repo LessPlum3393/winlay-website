@@ -71,11 +71,11 @@
             color: var(--text-secondary);
         }
         h2 {
-            font-size: 1.25rem;
+            font-size: 1.35rem;
             font-weight: 700;
             color: #ffffff;
-            margin-top: 32px;
-            margin-bottom: 12px;
+            margin-top: 36px;
+            margin-bottom: 14px;
             letter-spacing: -0.01em;
             display: flex;
             align-items: center;
@@ -94,6 +94,47 @@
             margin-bottom: 16px;
             font-size: 1rem;
         }
+        ul {
+            list-style: none;
+            margin-bottom: 18px;
+            padding-left: 0;
+        }
+        li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            color: var(--text-secondary);
+        }
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 8px;
+            color: var(--accent);
+            font-weight: bold;
+        }
+        strong {
+            color: var(--text-primary);
+        }
+        .notice-card {
+            background: rgba(59, 130, 246, 0.06);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 12px;
+            padding: 18px 22px;
+            margin: 24px 0;
+        }
+        .notice-card p {
+            margin-bottom: 0;
+            color: #bfdbfe;
+            font-size: 0.95rem;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: text-decoration 0.2s;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
         .footer {
             margin-top: 48px;
             padding-top: 24px;
@@ -109,7 +150,7 @@
         <div class="header">
             <span class="badge">Official Policy</span>
             <h1>Privacy Policy</h1>
-            <div class="effective-date">Last Updated: October 6, 2026 • Version 1.0.0</div>
+            <div class="effective-date">Last Updated: October 8, 2026 • Version 1.0.1</div>
         </div>
 
         <p>This Privacy Policy describes how <strong>Winlay</strong> ("we", "us", or "our") protects your privacy and handles data when you use the Winlay mobile application.</p>
